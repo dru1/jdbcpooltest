@@ -4,7 +4,7 @@ import javax.persistence.Basic;
 import javax.persistence.Entity;
 
 @Entity
-public class PoolTest extends DefaultEntity {
+public class SampleEntity extends DefaultEntity {
 
     private String randomString;
 

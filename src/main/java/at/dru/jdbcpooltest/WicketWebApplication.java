@@ -79,7 +79,6 @@ public class WicketWebApplication extends WebApplication {
         return runtimeType;
     }
 
-
     /**
      * simple run!
      *
@@ -88,6 +87,5 @@ public class WicketWebApplication extends WebApplication {
     public static void main(String[] args) {
         SpringApplication.run(WicketWebApplication.class, args);
     }
-
 
 }
