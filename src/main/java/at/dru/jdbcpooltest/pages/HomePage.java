@@ -1,7 +1,7 @@
 package at.dru.jdbcpooltest.pages;
 
 
-import at.dru.jdbcpooltest.service.SampleEntityServiceImpl;
+import at.dru.jdbcpooltest.service.SampleEntityService;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.request.cycle.RequestCycle;
 import org.apache.wicket.request.http.WebRequest;
@@ -12,7 +12,7 @@ import java.time.ZonedDateTime;
 public class HomePage extends AbstractPage {
 
     @SpringBean
-    private SampleEntityServiceImpl poolTestService;
+    private SampleEntityService sampleEntityService;
 
     @Override
     protected void onInitialize() {
@@ -25,7 +25,7 @@ public class HomePage extends AbstractPage {
     protected void onConfigure() {
         super.onConfigure();
 
-        poolTestService.runTests((WebRequest) RequestCycle.get().getRequest());
+        sampleEntityService.runTests((WebRequest) RequestCycle.get().getRequest());
     }
 
     @Override

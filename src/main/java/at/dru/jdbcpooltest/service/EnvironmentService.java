@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import javax.servlet.http.HttpServletRequest;
 
 @Service
-public class EnvironmentServiceImpl {
+public class EnvironmentService {
 
     public String resolveOrigin(WebRequest req) {
         HttpServletRequest httpReq = (HttpServletRequest) req.getContainerRequest();

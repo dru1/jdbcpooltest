@@ -11,13 +11,13 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.UUID;
 
 @Service
-public class SampleEntityServiceImpl {
+public class SampleEntityService {
 
     @Autowired
     private SampleEntityRepository sampleEntityRepository;
 
     @Autowired
-    private EnvironmentServiceImpl environmentService;
+    private EnvironmentService environmentService;
 
     @Transactional
     public void runTests(WebRequest origin) {
